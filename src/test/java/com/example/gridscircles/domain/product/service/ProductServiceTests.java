@@ -104,10 +104,10 @@ class ProductServiceTests {
 
         ProductResponse productResponse = productService.findProductById(product.getId());
 
-        assertThat(productResponse.getName()).isEqualTo(product.getName());
-        assertThat(productResponse.getDescription()).isEqualTo(product.getDescription());
+        assertThat(productResponse.name()).isEqualTo(product.getName());
+        assertThat(productResponse.description()).isEqualTo(product.getDescription());
         assertThat(productResponse.getPrice()).isEqualTo("1,000");
-        assertThat(productResponse.getCategory()).isEqualTo(product.getCategory());
+        assertThat(productResponse.category()).isEqualTo(product.getCategory());
         assertThat(productResponse.getBase64EncodeImage()).isEqualTo(
             Base64.getEncoder().encodeToString(product.getImage()));
         assertThat(productResponse.getContentType()).isEqualTo(product.getContentType());

@@ -88,13 +88,13 @@
     <tr>
       <td>상품명</td>
       <td>
-        <div class="value" th:text="${productResponse.getName()}"></div>
+        <div class="value" th:text="${productResponse.name()}"></div>
       </td>
     </tr>
     <tr>
       <td>카테고리</td>
       <td>
-        <div class="value" th:text="${productResponse.getCategory()}"></div>
+        <div class="value" th:text="${productResponse.category()}"></div>
       </td>
     </tr>
     <tr>
@@ -120,7 +120,7 @@
   </table>
 
   <div class="button-group" th:if="${isAdmin}">
-    <input type="hidden" id="productId" th:value="${productResponse.getId()}"/>
+    <input type="hidden" id="productId" th:value="${productResponse.id()}"/>
     <button type="button"
             th:onclick="|window.location.href='@{/admin/products/edit/{id}(id=${productResponse.getId()})}'|">
       수정

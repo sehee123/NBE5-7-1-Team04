@@ -40,8 +40,8 @@ public class OrdersService {
     private final OrdersRepository ordersRepository;
     private final OrderProductRepository orderProductRepository;
     private final ProductRepository productRepository;
-    @Lazy
-    private final OrdersService ordersService;
+//    @Lazy
+//    private final OrdersService ordersService;
 
     // 주문 ID로 검색
     @Transactional(readOnly = true)

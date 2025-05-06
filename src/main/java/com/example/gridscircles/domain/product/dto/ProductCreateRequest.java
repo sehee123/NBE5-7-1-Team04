@@ -4,6 +4,7 @@ import com.example.gridscircles.domain.product.enums.Category;
 import com.example.gridscircles.global.annotation.ByteSize;
 import com.example.gridscircles.global.annotation.ProductValidFile;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import lombok.Getter;
